@@ -20,7 +20,7 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".jsx"],
       alias: {
-        "@": path.resolve(__dirname, "src"),
+        "@": path.resolve(__dirname,"src")
       },
     },
 
@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
         // Rule for handling CSS files (add if not present)
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader", 'postcss-loader'],
+          use: ["style-loader", "css-loader", "postcss-loader"],
         },
       ],
     },
