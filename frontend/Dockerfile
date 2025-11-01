@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json yarn.lock .yarnrc.yml ./
 COPY backend/ ./backend
 COPY frontend/ ./frontend
-RUN yarn install --frozen-lockfile --production=false
+RUN yarn install --frozen-lockfile 
 
 # ----------------------------------------------------
 # Build the Frontend Static Assets

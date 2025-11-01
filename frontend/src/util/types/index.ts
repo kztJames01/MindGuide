@@ -64,3 +64,25 @@ export interface ChatProps {
   handleQuickPrompt: (text?: string) => void;
   handleSubmitForm: (e: React.FormEvent<HTMLFormElement>) => void;
 };
+export interface LandingPageProps {
+  onNavigate: (screen: Screens) => void;
+  handleChatSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  chatInput: string;
+  setChatInput: (value: string) => void;
+}
+
+export interface LoginPageProps {
+  onNavigate: (screen: Screens) => void;
+
+}
+
+export interface SignupPageProps {
+  onNavigate: (screen: Screens) => void;
+
+}
+
+export interface ContactPageProps {
+  onNavigate: (screen: string) => void;
+  isDarkMode: boolean;
+  setIsDarkMode: (value: boolean) => void;
+}
